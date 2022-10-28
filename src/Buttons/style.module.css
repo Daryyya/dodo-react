@@ -1,0 +1,40 @@
+.global__button {
+  padding: 9px 28px;
+  background-color: #f96900;
+  border-radius: 50px;
+  border: 0;
+
+  font-family: "Nitro";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+
+  transition: 0.4s;
+}
+
+.global__button:hover {
+  background-color: #e96100;
+  transition: 0.4s;
+}
+
+.lite__button {
+  padding: 9px 27px;
+  background: #fff0e6;
+  border-radius: 50px;
+  border: 0;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #d15700;
+  transition: 0.4s;
+}
+
+.lite__button:hover {
+  background-color: #f2d4c5;
+  transition: 0.4s;
+}
