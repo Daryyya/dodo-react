@@ -4,13 +4,12 @@
   flex: 0 0 250px;
   border-radius: 10px;
 }
-.card__img {
-  background-image: url(./image.svg);
-  width: 220px;
-  height: 220px;
-  align-self: center;
-}
-
+/* .card__img {
+    background-image: url(./image.svg);
+    width: 220px;
+    height: 220px;
+    align-self: center;
+  } */
 .card__name {
   max-width: 201px;
   max-height: 54px;
@@ -45,6 +44,7 @@
 .card__btn {
   margin-right: 15px;
 }
+
 
 .card:hover {
   box-shadow: 6px 6px 6px rgba(6, 5, 50, 0.05);
