@@ -1,0 +1,55 @@
+.new__card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 14px 0 14px 18px;
+}
+
+.new__text {
+  margin-left: 22px;
+}
+
+.new__title {
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+}
+
+.new__description {
+  margin-top: 2px;
+
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+}
+
+.global__card-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.global__img {
+  max-width: 100%;
+  height: auto;
+}
+
+.new__card:hover {
+  box-shadow: 6px 6px 6px rgba(6, 5, 50, 0.05);
+  transition: 0.3s;
+}
+.new__card:active {
+  box-shadow: none;
+  transition: 0.3s;
+}

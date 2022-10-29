@@ -45,6 +45,7 @@
   margin-right: 15px;
 }
 
+
 .card:hover {
   box-shadow: 6px 6px 6px rgba(6, 5, 50, 0.05);
   transition: 0.3s;
