@@ -1,19 +1,20 @@
 import React from "react";
 import s from "./index.module.css";
 
-const index = ({ alt, srcset, src, title, price }) => {
+const OfferCard = ({ alt, srcset, src, title, price }) => {
   return (
     <div className={s.new__card}>
       <div>
-        <a className={s.global__card_link} href="#"></a>
-        <img
-          className={s.global__img}
-          src={src}
-          srcSet={srcset}
-          width="76"
-          height="76"
-          alt={alt}
-        />
+        <a className={s.global__card_link} href="#">
+          <img
+            className={s.global__img}
+            src={src}
+            srcSet={srcset}
+            width="76"
+            height="76"
+            alt={alt}
+          />
+        </a>
       </div>
       <div className={s.new__text}>
         <p className={s.new__title}>{title}</p>
@@ -23,4 +24,4 @@ const index = ({ alt, srcset, src, title, price }) => {
   );
 };
 
-export default index;
+export default OfferCard;
