@@ -16,7 +16,6 @@ const Home = () => {
         ))}
       </WrapperNav>
       <Offer />
-      <Offer />
       <Main />
     </>
   );
