@@ -14,7 +14,7 @@ const cardItem = [
     srcset: small_caesar_2x,
     alt: "Цезарь",
     title: "Цезарь",
-    price: "от 445 $",
+    price: "от 445 ₽",
   },
 
   {
@@ -23,7 +23,7 @@ const cardItem = [
     srcset: small_salmon_2x,
     alt: "Лосось",
     title: "Нежный лосось",
-    price: "от 495 $",
+    price: "от 495 ₽",
   },
 
   {
@@ -32,7 +32,7 @@ const cardItem = [
     srcset: small_two_pizzas_2x,
     alt: "2 пиццы",
     title: "2 пиццы",
-    price: "от 899 $",
+    price: "от 899 ₽",
   },
 
   {
@@ -41,7 +41,7 @@ const cardItem = [
     srcset: small_carbonara_2x,
     alt: "Карбонара",
     title: "Карбонара",
-    price: "от 395 $",
+    price: "от 395 ₽",
   },
 ];
 

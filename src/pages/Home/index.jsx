@@ -4,6 +4,7 @@ import Header from "../../Header";
 import { title } from "./Array.js";
 import { WrapperNav } from "../../WrapperNav/WrapperNav";
 import Navigation from "../../Navigation/Navigation";
+import Offer from "../../Offer/Offer";
 
 const Home = () => {
   return (
@@ -14,6 +15,8 @@ const Home = () => {
           <Navigation title={elem.title} href={elem.href} />
         ))}
       </WrapperNav>
+      <Offer />
+      <Offer />
       <Main />
     </>
   );
