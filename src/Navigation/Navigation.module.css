@@ -1,0 +1,16 @@
+.navigation__link {
+  font-family: "Nunito", "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+  transition: 0.4s;
+  text-decoration: none;
+}
+
+.navigation__link:hover {
+  color: #f96900;
+  transition: 0.4s;
+}

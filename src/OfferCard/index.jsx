@@ -1,11 +1,11 @@
 import React from "react";
 import s from "./index.module.css";
 
-const OfferCard = ({ alt, srcset, src, title, price }) => {
+const OfferCard = ({ href, alt, srcset, src, title, price }) => {
   return (
     <div className={s.new__card}>
       <div>
-        <a className={s.global__card_link} href="#">
+        <a className={s.global__card_link} href={href}>
           <img
             className={s.global__img}
             src={src}

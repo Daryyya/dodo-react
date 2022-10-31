@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import UIkit from "./pages/UIkit";
+import UIkit from "./pages/UIkit/UIkit";
 
 function App() {
   return (

@@ -1,10 +1,11 @@
-import React, { Children } from 'react'
-import style from './style.module.css'
+import style from "./style.module.css";
 
-const Section = ({children}) => {
+const Section = ({ children, id }) => {
   return (
-    <div className={style.wrapper}>{children}</div>
-  )
-}
+    <section id={id} className={style.wrapper}>
+      {children}
+    </section>
+  );
+};
 
-export default Section
+export default Section;
