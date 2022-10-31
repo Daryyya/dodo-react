@@ -1,12 +1,5 @@
 import React from "react";
 import Buttons from "../../Buttons";
-import Card from "../../Card/Card";
-import Section from "../../Section";
-import pizza from "../../Pizza/pizza.js";
-import combo from "../../Combo/combo.js";
-import snack from "../../Snack/snack.js";
-import desert from "../../Desert/desert.js";
-import drink from "../../Drink/drink.js";
 import OfferCard from "../../OfferCard";
 import WrapperOfferCard from "../../WrapperOfferCard";
 import cardItem from "../../OfferCard/OfferCardObj/Obj.js";
@@ -24,32 +17,7 @@ const UIkit = () => {
           <Navigation title={elem.title} href={elem.href} />
         ))}
       </WrapperNav>
-      <Section>
-        {pizza.map((item) => (
-          <Card key={item.id} item={item} />
-        ))}
-      </Section>
-      <Section id="combo">
-        {combo.map((item) => (
-          <Card key={item.id} item={item} />
-        ))}
-      </Section>
-      <Section id="snack">
-        {snack.map((item) => (
-          <Card key={item.id} item={item} />
-        ))}
-      </Section>
-      <Section id="desserts">
-        {desert.map((item) => (
-          <Card key={item.id} item={item} />
-        ))}
-      </Section>
-      <Section id="drinks">
-        {drink.map((item) => (
-          <Card key={item.id} item={item} />
-        ))}
-      </Section>
-
+      <Navigation />
       <Buttons type="lite">Выбрать</Buttons>
       <Buttons type="orange">Собрать</Buttons>
 

@@ -46,11 +46,11 @@
 }
 
 
-.card:hover {
+/* .card:hover {
   box-shadow: 6px 6px 6px rgba(6, 5, 50, 0.05);
   transition: 0.3s;
 }
 .card:active {
   box-shadow: none;
   transition: 0.3s;
-}
+} */
