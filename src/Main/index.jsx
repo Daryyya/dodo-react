@@ -25,12 +25,12 @@ const Main = () => {
           <Card key={item.id} item={item} />
         ))}
       </Section>
-      <Section title="Десерты" id="dessert">
+      <Section title="Десерты" id="desserts">
         {desert.map((item) => (
           <Card key={item.id} item={item} />
         ))}
       </Section>
-      <Section title="Напитки" id="drink">
+      <Section title="Напитки" id="drinks">
         {drink.map((item) => (
           <Card key={item.id} item={item} />
         ))}

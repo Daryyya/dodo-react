@@ -6,7 +6,7 @@ import cardItem from "../../OfferCard/OfferCardObj/Obj.js";
 import Header from "../../Header/index.jsx";
 import Navigation from "../../Navigation/Navigation.jsx";
 import { WrapperNav } from "../../WrapperNav/WrapperNav";
-import { title } from "./Array.js";
+import { title } from "../Home/Array.js";
 
 const UIkit = () => {
   return (
