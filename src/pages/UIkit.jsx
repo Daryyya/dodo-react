@@ -9,11 +9,13 @@ import desert from "../Desert/desert.js";
 import drink from "../Drink/drink.js";
 import OfferCard from "../OfferCard";
 import WrapperOfferCard from "../WrapperOfferCard";
-import cardItem from "../OfferCard/OfferCardObj/Obj.js"
+import cardItem from "../OfferCard/OfferCardObj/Obj.js";
+import Header from "../Header/index.jsx";
 
 const UIkit = () => {
   return (
     <div>
+      <Header />
       <Section>
         {pizza.map((item) => (
           <Card key={item.id} item={item} />
@@ -38,7 +40,6 @@ const UIkit = () => {
         {drink.map((item) => (
           <Card key={item.id} item={item} />
         ))}
-        
       </Section>
 
       <Buttons type="lite">Выбрать</Buttons>
