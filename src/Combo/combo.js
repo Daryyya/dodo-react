@@ -11,7 +11,7 @@ import combo_2x_5 from "./img/combo-2x-5.png";
 
 const combo = [
   {
-    id: 1,
+    id: 9,
     image_1x: combo_1x_1,
     image_2x: combo_2x_1,
     name: "Комбо за 599 ₽",
@@ -28,7 +28,7 @@ const combo = [
     price: "899 ₽",
   },
   {
-    id: 3,
+    id: 11,
     image_1x: combo_1x_3,
     image_2x: combo_2x_3,
     name: "2 пиццы и закуска",
@@ -37,7 +37,7 @@ const combo = [
     price: "799 ₽",
   },
   {
-    id: 4,
+    id: 12,
     image_1x: combo_1x_4,
     image_2x: combo_2x_4,
     name: "Пицца и 2 закуски",
@@ -46,7 +46,7 @@ const combo = [
     price: "799 ₽",
   },
   {
-    id: 5,
+    id: 13,
     image_1x: combo_1x_5,
     image_2x: combo_2x_5,
     name: "Комбо за 999 ₽",

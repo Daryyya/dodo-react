@@ -11,7 +11,7 @@ import drink_2x_5 from "./img/drink-2x-5.png";
 
 const drink = [
   {
-    id: 1,
+    id: 24,
     image_1x: drink_1x_1,
     image_2x: drink_2x_1,
     name: "2 Coca-Cola по суперцене",
@@ -20,7 +20,7 @@ const drink = [
     price: "99 ₽",
   },
   {
-    id: 2,
+    id: 25,
     image_1x: drink_1x_2,
     image_2x: drink_2x_2,
     name: "Coca-Cola Orange",
@@ -28,7 +28,7 @@ const drink = [
     price: "149 ₽",
   },
   {
-    id: 3,
+    id: 26,
     image_1x: drink_1x_3,
     image_2x: drink_2x_3,
     name: "Coca-Cola Zero",
@@ -36,7 +36,7 @@ const drink = [
     price: "159 ₽",
   },
   {
-    id: 4,
+    id: 27,
     image_1x: drink_1x_4,
     image_2x: drink_2x_4,
     name: "Coca-Cola",
@@ -44,7 +44,7 @@ const drink = [
     price: "159 ₽",
   },
   {
-    id: 5,
+    id: 28,
     image_1x: drink_1x_5,
     image_2x: drink_2x_5,
     name: "Coca-Cola Vanilla",

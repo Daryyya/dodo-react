@@ -11,7 +11,7 @@ import desert_2x_5 from "./img/desert-2x-5.png";
 
 const desert = [
   {
-    id: 1,
+    id: 19,
     image_1x: desert_1x_1,
     image_2x: desert_2x_1,
     name: "Яблочный пирог",
@@ -20,7 +20,7 @@ const desert = [
     price: "99 ₽",
   },
   {
-    id: 2,
+    id: 20,
     image_1x: desert_1x_2,
     image_2x: desert_2x_2,
     name: "Чизкейк Нью-Йорк",
@@ -28,7 +28,7 @@ const desert = [
     price: "149 ₽",
   },
   {
-    id: 3,
+    id: 21,
     image_1x: desert_1x_3,
     image_2x: desert_2x_3,
     name: "Фонданы, 2 шт",
@@ -37,7 +37,7 @@ const desert = [
     price: "159 ₽",
   },
   {
-    id: 4,
+    id: 22,
     image_1x: desert_1x_4,
     image_2x: desert_2x_4,
     name: "Молочный коктейль с печеньем Орео",
@@ -46,7 +46,7 @@ const desert = [
     price: "159 ₽",
   },
   {
-    id: 5,
+    id: 23,
     image_1x: desert_1x_5,
     image_2x: desert_2x_5,
     name: "Классический молочный коктейль",
