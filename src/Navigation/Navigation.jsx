@@ -1,13 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import s from "./Navigation.module.css";
 
-const Navigation = ({ title, href }) => {
+const Navigation = ({ title, to }) => {
   return (
-    <li>
-      <a href={href} className={s.navigation__link}>
+    <>
+      <Link to={to} className={s.navigation__link}>
         {title}
-      </a>
-    </li>
+      </Link>
+    </>
   );
 };
 
