@@ -1,5 +1,5 @@
 import React from "react";
-import Buttons from "../Buttons";
+import Buttons from "../../ui/Buttons";
 import s from "./WrapperNav.module.css";
 
 export const WrapperNav = ({ children }) => {

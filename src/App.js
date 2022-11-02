@@ -1,15 +1,21 @@
 import { Route, Routes } from "react-router-dom";
 import { useEffect, useState } from "react";
-// import Home from "./pages/Home";
+import React, {useState} from "react";
 import UIkit from "./pages/UIkit/UIkit";
-import Section from "./Section";
-import Card from "./Card/Card";
-import pizza from "./Pizza/pizza";
-import combo from "./Combo/combo";
-import snack from "./Snack/snack";
-import desert from "./Desert/desert";
-import drink from "./Drink/drink";
 import Basket from "./Basket/Basket";
+import Section from "./ui/Section";
+import Card from "./ui/Card/Card";
+import pizza from "./pages/Pizza/pizza";
+import combo from "./pages/Combo/combo";
+import snack from "./pages/Snack/snack";
+import desert from "./pages/Desert/desert";
+import drink from "./pages/Drink/drink";
+import Pizza from "./pages/Pizza/Pizza";
+import Combo from "./pages/Combo/Combo";
+import Snack from "./pages/Snack/Snack";
+import Desert from "./pages/Desert/Desert";
+import Drink from "./pages/Drink/Drink";
+import Home from "./pages/Home";
 
 const savedChoices = JSON.parse(localStorage.getItem("choiseCard")) ?? [];
 
@@ -23,61 +29,44 @@ function App() {
     localStorage.setItem("choiseCard", JSON.stringify(choice));
   }, [choice]);
 
+  const [isOpen, setIsOpen] = useState(false);
+  const [id, setId] = useState(0);
+  console.log(isOpen)
+
   return (
     <Routes>
-      {/* <Route path="/" element={<Home />} /> */}
       <Route
         path="/"
         element={
-          <Section title="Пицца" id="pizza">
-            {pizza.map((item) => (
-              <Card key={item.id} item={item} />
-            ))}
-          </Section>
+          <Home/>
         }
       />
       <Route
         path="/pizza"
         element={
-          <Section title="Пицца" id="pizza">
-            {pizza.map((item) => (
-              <Card key={item.id} item={item} />
-            ))}
-          </Section>
+          <Pizza isOpen={isOpen} setIsOpen={setIsOpen} id={id} setId={setId}/>
         }
       />
       <Route
         path="/combo"
         element={
-          <Section title="Комбо" id="combo">
-            {combo.map((item) => (
-              <Card key={item.id} item={item} />
-            ))}
-          </Section>
+          <Combo isOpen={isOpen} setIsOpen={setIsOpen} id={id} setId={setId}/>
         }
       />
       <Route
         path="/snack"
         element={
-          <Section title="Закуски" id="snack">
-            {snack.map((item) => (
-              <Card key={item.id} item={item} />
-            ))}
-          </Section>
+          <Snack isOpen={isOpen} setIsOpen={setIsOpen} id={id} setId={setId}/>
         }
       />
       <Route
-        path="/desserts"
+        path="/desert"
         element={
-          <Section title="Десерты" id="desserts">
-            {desert.map((item) => (
-              <Card key={item.id} item={item} />
-            ))}
-          </Section>
+          <Desert isOpen={isOpen} setIsOpen={setIsOpen} id={id} setId={setId}/>
         }
       />
       <Route
-        path="/drinks"
+        path="/drink"
         element={
           <Section title="Напитки" id="drinks">
             {drink.map((item) => (
@@ -91,6 +80,8 @@ function App() {
               />
             ))}
           </Section>
+         // <Drink isOpen={isOpen} setIsOpen={setIsOpen} id={id} setId={setId}/>
+
         }
       />
       <Route path="/uikit" element={<UIkit />} />
