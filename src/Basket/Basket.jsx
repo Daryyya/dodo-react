@@ -1,7 +1,7 @@
 import React from "react";
-import Card from "../Card 1/Card1";
-import drink from "../Drink/drink";
 import s from "./Basket.module.css";
+import Card from "../ui/Card/Card";
+import drink from "../pages/Drink/drink";
 
 const Basket = ({ choice, unchoices, choices }) => {
   const choiceCards = drink.filter((elem) => choice.includes(elem.id));
@@ -9,7 +9,9 @@ const Basket = ({ choice, unchoices, choices }) => {
   console.log(choice);
 
   return (
+
     <div className={s.container}>
+
       {choiceCards.map((elem) => (
         <Card
           item={elem}

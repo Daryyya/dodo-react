@@ -3,7 +3,7 @@ import Buttons from "../Buttons";
 import style from "./Card.module.css";
 
 const Card = ({ item, setIsOpen, setId, isChoice, unchoices, choices }) => {
-  const { image_1x, image_2x, name, description, price, id } = item;
+  const { image_1x, image_2x, name, description, price, id, type } = item;
   console.log("render");
   return (
     <div className={style.card}>
@@ -20,7 +20,9 @@ const Card = ({ item, setIsOpen, setId, isChoice, unchoices, choices }) => {
       <p className={style.card__desc}>{description}</p>
       <div className={style.card__info}>
         <p className={style.card__price}>{price}</p>
-        <Buttons
+        {
+          type === 'tocart' && <Buttons
+          type='lite'
           choices={choices}
           unchoices={unchoices}
           isChoice={isChoice}
@@ -28,8 +30,10 @@ const Card = ({ item, setIsOpen, setId, isChoice, unchoices, choices }) => {
           id={id}
           setId={setId}
         >
-          Собрать
+          В корзину
         </Buttons>
+        }
+        
       </div>
     </div>
   );

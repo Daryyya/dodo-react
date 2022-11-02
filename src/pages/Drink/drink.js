@@ -18,6 +18,7 @@ const drink = [
     description:
       "Две классические Coca-Cola по 0,5 литров по выгодной цене, 0,5 л",
     price: "99 ₽",
+    type: 'tocart',
   },
   {
     id: 25,
@@ -26,6 +27,7 @@ const drink = [
     name: "Coca-Cola Orange",
     description: "0,5 л",
     price: "149 ₽",
+    type: 'tocart',
   },
   {
     id: 26,
@@ -34,6 +36,7 @@ const drink = [
     name: "Coca-Cola Zero",
     description: "0,5 л",
     price: "159 ₽",
+    type: 'tocart',
   },
   {
     id: 27,
@@ -42,6 +45,7 @@ const drink = [
     name: "Coca-Cola",
     description: "0,5 л",
     price: "159 ₽",
+    type: 'tocart',
   },
   {
     id: 28,
@@ -50,6 +54,7 @@ const drink = [
     name: "Coca-Cola Vanilla",
     description: "0,5 л",
     price: "159 ₽",
+    type: 'tocart',
   },
 ];
 

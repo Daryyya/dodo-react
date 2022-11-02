@@ -20,7 +20,7 @@ const combo = [
     price: "599 ₽",
   },
   {
-    id: 2,
+    id: 10,
     image_1x: combo_1x_2,
     image_2x: combo_2x_2,
     name: "2 пиццы",
