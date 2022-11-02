@@ -14,8 +14,8 @@ const Home = () => {
     <>
       <Header />
       <WrapperNav>
-        {title.map((elem, index) => (
-          <Navigation key={index} title={elem.title} href={elem.href} />
+        {title.map((elem) => (
+          <Navigation title={elem.title} to={elem.href} />
         ))}
       </WrapperNav>
       <Offer />

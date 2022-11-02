@@ -33,8 +33,7 @@ const Main = ({setIsOpen, isOpen, setId, id}) => {
     // console.log(isOpen)
     // console.log(id)
   
-  
-
+ 
   return (
     <main>
       <Section title="Пицца" id="pizza">
