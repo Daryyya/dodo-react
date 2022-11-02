@@ -5,11 +5,7 @@ import Header from "../../component/Header/index.jsx";
 import Navigation from "../../component/Navigation/Navigation.jsx";
 import { WrapperNav } from "../../component/WrapperNav/WrapperNav";
 import { title } from "../Home/Array.js";
-import Slider from "../../Slider/Slider";
 import Basket from "../../Basket/Basket";
-
-import Basket from "../../Basket/Basket";
-
 import Slider from "../../ui/Slider/Slider";
 
 

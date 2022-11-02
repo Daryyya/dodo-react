@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./Basket.module.css";
-import Card from "../ui/Card/Card";
+import Card1 from '../Card 1/Card1'
 import drink from "../pages/Drink/drink";
 
 const Basket = ({ choice, unchoices, choices }) => {
@@ -13,7 +13,7 @@ const Basket = ({ choice, unchoices, choices }) => {
     <div className={s.container}>
 
       {choiceCards.map((elem) => (
-        <Card
+        <Card1
           item={elem}
           key={elem.id}
           choices={choices}
