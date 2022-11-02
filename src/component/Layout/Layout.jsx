@@ -3,7 +3,6 @@ import Header from "../Header";
 import { title } from "../../pages/Home/Array";
 import Navigation from "../Navigation/Navigation";
 import { WrapperNav } from "../WrapperNav/WrapperNav";
-import Slider from "../../ui/Slider/Slider";
 import Main from "../Main";
 
 export const Layout = ({ children }) => {
