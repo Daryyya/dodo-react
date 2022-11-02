@@ -1,8 +1,9 @@
 import React from "react";
-import Buttons from "../Buttons";
-import style from "./Card.module.css";
+import Button1 from "../Button1";
+import style from "./Card1.module.css";
+import button from "./Vector.jpg";
 
-const Card = ({ item, setIsOpen, setId, isChoice, unchoices, choices }) => {
+const Card1 = ({ item, setIsOpen, setId, isChoice, unchoices, choices }) => {
   const { image_1x, image_2x, name, description, price, id } = item;
   console.log("render");
   return (
@@ -20,7 +21,7 @@ const Card = ({ item, setIsOpen, setId, isChoice, unchoices, choices }) => {
       <p className={style.card__desc}>{description}</p>
       <div className={style.card__info}>
         <p className={style.card__price}>{price}</p>
-        <Buttons
+        <Button1
           choices={choices}
           unchoices={unchoices}
           isChoice={isChoice}
@@ -28,11 +29,11 @@ const Card = ({ item, setIsOpen, setId, isChoice, unchoices, choices }) => {
           id={id}
           setId={setId}
         >
-          Собрать
-        </Buttons>
+          <img src={button} />
+        </Button1>
       </div>
     </div>
   );
 };
 
-export default Card;
+export default Card1;
