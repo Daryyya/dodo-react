@@ -1,11 +1,11 @@
 import React from "react";
-import Buttons from "../../Buttons";
+import Buttons from "../../ui/Buttons";
 
-import Header from "../../Header/index.jsx";
-import Navigation from "../../Navigation/Navigation.jsx";
-import { WrapperNav } from "../../WrapperNav/WrapperNav";
+import Header from "../../component/Header/index.jsx";
+import Navigation from "../../component/Navigation/Navigation.jsx";
+import { WrapperNav } from "../../component/WrapperNav/WrapperNav";
 import { title } from "../Home/Array.js";
-import Slider from "../../Slider/Slider";
+import Slider from "../../ui/Slider/Slider";
 
 const UIkit = () => {
   return (

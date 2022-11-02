@@ -1,17 +1,17 @@
 import React, {useEffect, useState} from "react";
-import Card from "../Card/Card";
-import Section from "../Section";
-import pizza from "../Pizza/pizza";
-import combo from "../Combo/combo";
-import snack from "../Snack/snack";
-import desert from "../Desert/desert";
-import drink from "../Drink/drink";
-import Portal from "../Portal";
-import Modal from "../Modal";
+// import Card from "../Card/Card";
+// import Section from "../Section";
+import pizza from "../../pages/Pizza/pizza";
+import combo from "../../pages/Combo/combo";
+import snack from "../../pages/Snack/snack";
+import desert from "../../pages/Desert/desert";
+import drink from "../../pages/Drink/drink";
+import Portal from "../../ui/Portal";
+import Modal from "../../ui/Modal";
 
 
 
-const Main = ({setIsOpen, isOpen, setId, id}) => {
+const Main = ({setIsOpen, isOpen, setId, id, children}) => {
 
   const [data, setData] = useState([]);
 
@@ -36,7 +36,8 @@ const Main = ({setIsOpen, isOpen, setId, id}) => {
  
   return (
     <main>
-      <Section title="Пицца" id="pizza">
+      {children}
+      {/* <Section title="Пицца" id="pizza">
         {pizza.map((item) => (
           <Card key={item.id} item={item} setIsOpen={setIsOpen} setId={setId}/>
         ))}
@@ -60,7 +61,7 @@ const Main = ({setIsOpen, isOpen, setId, id}) => {
         {drink.map((item) => (
           <Card key={item.id} item={item} />
         ))}
-      </Section>
+      </Section> */}
       <Portal>
         {
           isOpen && <Modal setIsOpen={setIsOpen} id ={id} data={data}/>
