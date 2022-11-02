@@ -1,6 +1,6 @@
 import React from "react";
-import Card from "../Card/Card";
-import drink from "../Drink/drink";
+import Card from "../ui/Card/Card";
+import drink from "../pages/Drink/drink";
 
 const Basket = ({ choice, unchoices, choices }) => {
   const choiceCards = drink.filter((elem) => choice.includes(elem.id));

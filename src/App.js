@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
-import { useEffect, useState } from "react";
-import React, {useState} from "react";
+// import { useEffect, useState } from "react";
+import React, {useState, useEffect} from "react";
 import UIkit from "./pages/UIkit/UIkit";
 import Basket from "./Basket/Basket";
 import Section from "./ui/Section";
