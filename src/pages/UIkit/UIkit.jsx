@@ -6,10 +6,12 @@ import Navigation from "../../Navigation/Navigation.jsx";
 import { WrapperNav } from "../../WrapperNav/WrapperNav";
 import { title } from "../Home/Array.js";
 import Slider from "../../Slider/Slider";
+import Basket from "../../Basket/Basket";
 
 const UIkit = () => {
   return (
     <div>
+      <Basket />
       <Slider />
       <Header />
       <WrapperNav>

@@ -2,9 +2,9 @@ import React from "react";
 import Buttons from "../Buttons";
 import style from "./Card.module.css";
 
-const Card = ({ item, setIsOpen, setId }) => {
+const Card = ({ item, setIsOpen, setId, isChoice, unchoices, choices }) => {
   const { image_1x, image_2x, name, description, price, id } = item;
-  console.log('render')
+  console.log("render");
   return (
     <div className={style.card}>
       <div className={style.card__img}>
@@ -20,7 +20,16 @@ const Card = ({ item, setIsOpen, setId }) => {
       <p className={style.card__desc}>{description}</p>
       <div className={style.card__info}>
         <p className={style.card__price}>{price}</p>
-        <Buttons setIsOpen={setIsOpen} id={id} setId={setId}>Собрать</Buttons>
+        <Buttons
+          choices={choices}
+          unchoices={unchoices}
+          isChoice={isChoice}
+          setIsOpen={setIsOpen}
+          id={id}
+          setId={setId}
+        >
+          Собрать
+        </Buttons>
       </div>
     </div>
   );
