@@ -11,7 +11,7 @@ import snack_2x_5 from "./img/snack-2x-5.png";
 
 const snack = [
   {
-    id: 1,
+    id: 14,
     image_1x: snack_1x_1,
     image_2x: snack_2x_1,
     name: "Томатный суп с гренками",
@@ -20,7 +20,7 @@ const snack = [
     price: "99 ₽",
   },
   {
-    id: 2,
+    id: 15,
     image_1x: snack_1x_2,
     image_2x: snack_2x_2,
     name: "Томатный суп с митболами",
@@ -29,7 +29,7 @@ const snack = [
     price: "149 ₽",
   },
   {
-    id: 3,
+    id: 16,
     image_1x: snack_1x_3,
     image_2x: snack_2x_3,
     name: "Додстер",
@@ -38,7 +38,7 @@ const snack = [
     price: "159 ₽",
   },
   {
-    id: 4,
+    id: 17,
     image_1x: snack_1x_4,
     image_2x: snack_2x_4,
     name: "Острый Додстер",
@@ -47,7 +47,7 @@ const snack = [
     price: "159 ₽",
   },
   {
-    id: 5,
+    id: 18,
     image_1x: snack_1x_5,
     image_2x: snack_2x_5,
     name: "Додстер Чипотле",

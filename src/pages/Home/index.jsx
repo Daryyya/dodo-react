@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Main from "../../Main";
 import Header from "../../Header";
 import { title } from "./Array.js";
@@ -7,6 +7,9 @@ import Navigation from "../../Navigation/Navigation";
 import Offer from "../../Offer/Offer";
 
 const Home = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [id, setId] = useState(0);
+  console.log(isOpen)
   return (
     <>
       <Header />
@@ -16,7 +19,7 @@ const Home = () => {
         ))}
       </WrapperNav>
       <Offer />
-      <Main />
+      <Main setIsOpen={setIsOpen} setId={setId} isOpen={isOpen} id={id}/>
     </>
   );
 };
