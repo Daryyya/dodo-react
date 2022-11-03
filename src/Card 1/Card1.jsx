@@ -5,7 +5,6 @@ import button from "./Vector.jpg";
 
 const Card1 = ({ item, setIsOpen, setId, isChoice, unchoices, choices }) => {
   const { image_1x, image_2x, name, description, price, id } = item;
-  console.log("render");
   return (
     <div className={style.card}>
       <div className={style.card__img}>

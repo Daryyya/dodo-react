@@ -15,8 +15,6 @@ export const Layout = ({ children }) => {
           <Navigation title={elem.title} to={elem.href} />
         ))}
       </WrapperNav>
-      {/* <Slider />
-      <Offer /> */}
       <Main>{children}</Main>
     </>
   );

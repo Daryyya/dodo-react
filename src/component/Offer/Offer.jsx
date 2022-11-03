@@ -1,5 +1,5 @@
-import React from 'react'
-import style from './style.module.css'
+import React from "react";
+import style from "./style.module.css";
 import OfferCard from "../OfferCard";
 import WrapperOfferCard from "../WrapperOfferCard";
 import cardItem from "../OfferCard/OfferCardObj/Obj.js";
@@ -7,10 +7,8 @@ import cardItem from "../OfferCard/OfferCardObj/Obj.js";
 const Offer = () => {
   return (
     <section className={style.containerOffer}>
-      <h2 className={style.title}>
-        Новое и популярное
-      </h2>
-        <WrapperOfferCard>
+      <h2 className={style.title}>Новое и популярное</h2>
+      <WrapperOfferCard>
         {cardItem.map((elem) => (
           <OfferCard
             key={elem.id}
@@ -24,7 +22,7 @@ const Offer = () => {
         ))}
       </WrapperOfferCard>
     </section>
-  )
-}
+  );
+};
 
-export default Offer
+export default Offer;

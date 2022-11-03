@@ -1,10 +1,9 @@
 import React from "react";
-import Buttons from "../Buttons";
+import Buttons from "../Buttons/index.jsx";
 import style from "./Card.module.css";
 
 const Card = ({ item, setIsOpen, setId, isChoice, unchoices, choices }) => {
   const { image_1x, image_2x, name, description, price, id, type } = item;
-  console.log("render");
   return (
     <div className={style.card}>
       <div className={style.card__img}>
