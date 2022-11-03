@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import s from "./Basket.module.css";
 import Card1 from "../Card 1/Card1";
 import { Link } from "react-router-dom";
 
 const Basket = ({ choice, unchoices, choices, data }) => {
   const choiceCards = data.filter((elem) => choice.includes(elem.id));
+  const [price, setPrice] = useState(0)
+
+  console.log(price)
   return (
     <>
       {/* временно */}
@@ -18,9 +21,11 @@ const Basket = ({ choice, unchoices, choices, data }) => {
             unchoices={unchoices}
             id={elem.id}
             isChoice={choice?.includes(elem.id)}
+            setPrice={setPrice}
           />
         ))}
       </div>
+      <p>Сумма заказа: {price}</p>
     </>
   );
 };

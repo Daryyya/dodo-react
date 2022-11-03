@@ -27,6 +27,8 @@ function App() {
     setData((p) => [...p, ...drink]);
   }, []);
 
+  
+
   const [choice, setChoise] = useState(savedChoices);
 
   const choices = (id) => setChoise((p) => [...p, id]);
