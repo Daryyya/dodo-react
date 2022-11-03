@@ -2,9 +2,7 @@ import React from "react";
 import { useState } from "react";
 import s from "./Counter.module.css";
 
-const Counter = () => {
-  const [count, setCount] = useState(1);
-
+const Counter = ({ count, setCount }) => {
   return (
     <div className={s.counter}>
       <button

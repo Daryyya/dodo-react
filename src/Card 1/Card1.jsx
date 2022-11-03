@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import Button1 from "../Button1";
 import style from "./Card1.module.css";
 import button from "./Vector.jpg";
@@ -6,6 +7,8 @@ import Counter from "../ui/Counter/Counter";
 
 const Card1 = ({ item, setIsOpen, setId, isChoice, unchoices, choices }) => {
   const { image_1x, image_2x, name, description, price, id } = item;
+  const [count, setCount] = useState(1);
+
   return (
     <div className={style.card}>
       <div className={style.card__img}>
@@ -20,8 +23,8 @@ const Card1 = ({ item, setIsOpen, setId, isChoice, unchoices, choices }) => {
       <p className={style.card__name}>{name}</p>
       <p className={style.card__desc}>{description}</p>
       <div className={style.card__info}>
-        <p className={style.card__price}>{`${price}₽`}</p>
-        <Counter />
+        <p className={style.card__price}>{`${price * count}₽`}</p>
+        <Counter count={count} setCount={setCount} />
         <Button1
           choices={choices}
           unchoices={unchoices}
