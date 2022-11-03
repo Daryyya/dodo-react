@@ -18,7 +18,7 @@ const Card = ({ item, setIsOpen, setId, isChoice, unchoices, choices }) => {
       <p className={style.card__name}>{name}</p>
       <p className={style.card__desc}>{description}</p>
       <div className={style.card__info}>
-        <p className={style.card__price}>{price}</p>
+        <p className={style.card__price}>{`${price}₽`}</p>
         {type === "tocart" && (
           <Buttons
             type="lite"
