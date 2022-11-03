@@ -17,7 +17,7 @@ const desert = [
     name: "Яблочный пирог",
     description:
       "Десерт из песочного теста с яблочной начинкой. Может содержать изюм",
-    price: "99 ₽",
+    price: 99,
     type: 'tocart',
   },
   {
@@ -26,7 +26,7 @@ const desert = [
     image_2x: desert_2x_2,
     name: "Чизкейк Нью-Йорк",
     description: "Классический американский творожный десерт",
-    price: "149 ₽",
+    price: 149,
     type: 'tocart',
   },
   {
@@ -36,7 +36,7 @@ const desert = [
     name: "Фонданы, 2 шт",
     description:
       "Два десерта с хрустящей корочкой и топлёной шоколадной начинкой",
-    price: "159 ₽",
+    price: 159,
     type: 'tocart',
   },
   {
@@ -46,7 +46,7 @@ const desert = [
     name: "Молочный коктейль с печеньем Орео",
     description:
       "Напиток из молока и мороженого с добавлением дробленого печенья «Орео»",
-    price: "159 ₽",
+    price: 159,
     type: 'tocart',
   },
   {
@@ -55,7 +55,7 @@ const desert = [
     image_2x: desert_2x_5,
     name: "Классический молочный коктейль",
     description: "Напиток из молока и мороженого",
-    price: "159 ₽",
+    price: 159,
     type: 'tocart',
   },
 ];
