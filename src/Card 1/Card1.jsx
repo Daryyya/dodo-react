@@ -2,6 +2,7 @@ import React from "react";
 import Button1 from "../Button1";
 import style from "./Card1.module.css";
 import button from "./Vector.jpg";
+import Counter from "../ui/Counter/Counter";
 
 const Card1 = ({ item, setIsOpen, setId, isChoice, unchoices, choices }) => {
   const { image_1x, image_2x, name, description, price, id } = item;
@@ -21,6 +22,7 @@ const Card1 = ({ item, setIsOpen, setId, isChoice, unchoices, choices }) => {
       <p className={style.card__desc}>{description}</p>
       <div className={style.card__info}>
         <p className={style.card__price}>{price}</p>
+        <Counter />
         <Button1
           choices={choices}
           unchoices={unchoices}

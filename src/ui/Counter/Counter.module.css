@@ -1,0 +1,21 @@
+.counter {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f3f3f7;
+  margin-right: 56px;
+  padding: 5 15px;
+  width: 96px;
+  height: 32px;
+  border-radius: 40px;
+  align-items: center;
+  color: #73798c;
+}
+
+.btn {
+  border: 0;
+  background-color: #f3f3f7;
+}
+
+.p {
+  color: #73798c;
+}

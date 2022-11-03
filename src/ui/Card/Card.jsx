@@ -20,20 +20,19 @@ const Card = ({ item, setIsOpen, setId, isChoice, unchoices, choices }) => {
       <p className={style.card__desc}>{description}</p>
       <div className={style.card__info}>
         <p className={style.card__price}>{price}</p>
-        {
-          type === 'tocart' && <Buttons
-          type='lite'
-          choices={choices}
-          unchoices={unchoices}
-          isChoice={isChoice}
-          setIsOpen={setIsOpen}
-          id={id}
-          setId={setId}
-        >
-          В корзину
-        </Buttons>
-        }
-        
+        {type === "tocart" && (
+          <Buttons
+            type="lite"
+            choices={choices}
+            unchoices={unchoices}
+            isChoice={isChoice}
+            setIsOpen={setIsOpen}
+            id={id}
+            setId={setId}
+          >
+            {isChoice ? "Удалить" : "В корзину"}
+          </Buttons>
+        )}
       </div>
     </div>
   );

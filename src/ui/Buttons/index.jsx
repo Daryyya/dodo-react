@@ -7,9 +7,9 @@ const Buttons = ({
   setIsOpen,
   id,
   setId,
-  isChoice,
   unchoices,
   choices,
+  isChoice,
 }) => {
   return (
     <button
@@ -18,7 +18,13 @@ const Buttons = ({
         // setId(id);
         isChoice ? unchoices(id) : choices(id);
       }}
-      className={type === "orange" ? s.global__button : s.lite__button}
+      className={
+        type === "orange"
+          ? s.global__button
+          : isChoice
+          ? s.global__button
+          : s.lite__button
+      }
     >
       {children}
     </button>
