@@ -3,6 +3,7 @@ import Portal from "../../ui/Portal";
 import Modal from "../../ui/Modal";
 
 const Main = ({ setIsOpen, isOpen, id, children, data }) => {
+  console.log(data)
   return (
     <main>
       {children}

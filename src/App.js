@@ -45,7 +45,7 @@ function App() {
       <Route
         path="/pizza"
         element={
-          <Pizza isOpen={isOpen} setIsOpen={setIsOpen} id={id} setId={setId} />
+          <Pizza isOpen={isOpen} setIsOpen={setIsOpen} id={id} setId={setId} data={data}/>
         }
       />
       <Route

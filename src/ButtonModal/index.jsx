@@ -1,17 +1,20 @@
 import React from "react";
 import s from "./style.module.css";
 
-const Buttons = ({
+const ButtonModal = ({
   id,
   type = "orange",
   children,
+  setIsOpen,
+  setId,
   isChoice,
   unchoices,
   choices,
 }) => {
   return (
     <button
-      onClick={() => (isChoice ? unchoices(id) : choices(id))}
+      onClick={() => {setIsOpen(true);
+      setId(id);}}
       className={type === "orange" ? s.global__button : s.lite__button}
     >
       {children}
@@ -19,4 +22,4 @@ const Buttons = ({
   );
 };
 
-export default Buttons;
+export default ButtonModal;

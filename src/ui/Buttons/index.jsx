@@ -14,8 +14,7 @@ const Buttons = ({
   return (
     <button
       onClick={() => {
-        // setIsOpen(true);
-        // setId(id);
+        
         isChoice ? unchoices(id) : choices(id);
       }}
       className={
