@@ -1,92 +1,190 @@
 .popup {
-    display: flex;
-    position: fixed;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(10, 14, 25, 0.5);
+  display: flex;
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 14, 25, 0.5);
 }
 
 .modal {
-    max-width: 910px;
-    max-height: 620px;
-    display: flex;
-    margin: auto;
-    background: #FFFFFF;
-    box-shadow: 0px 6px 55px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
+  max-width: 910px;
+  max-height: 620px;
+  display: flex;
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 0px 6px 55px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
 }
 
 .imgWrap {
-    display: flex;
-    width: 530px;
-    height: 610px;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  width: 530px;
+  height: 610px;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
 }
 
 .img {
-    display:block;
-    object-fit: cover;
-    overflow: hidden;
+  display: block;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .title {
-    max-width: 201px;
-    max-height: 54px;
-    margin: 5px 0 10px 0;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 27.28px;
-    color: #000;
-    flex: 1 1 auto;
-  }
+  max-width: 201px;
+  max-height: 54px;
+  margin-bottom: 3px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000;
+  flex: 1 1 auto;
+}
 
 .info {
-    padding: 30px;
+  padding: 30px;
+  max-width: 380px;
 }
 
 .text {
-font-size: 14px;
-line-height: 19px;
-color: #73798C;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #73798c;
+  margin-bottom: 11px;
 }
 
 .radioWrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #F3F3F7;
-    width: 100%;
-    height: 32px;
-    border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f3f3f7;
+  width: 100%;
+  height: 32px;
+  border-radius: 100px;
+  margin-bottom: 10px;
+  max-width: 320px;
 }
 
 .radioInput {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .radio {
-    /* background: #FFFFFF;
+  /* background: #FFFFFF;
 box-shadow: 0px 3px 15px rgba(6, 5, 50, 0.05);
 padding: 5px 28px 7px;
 border-radius: 100px; */
-padding: 7px 23px;
-font-size: 12px;
-line-height: 16px;
+  padding: 7px 23px;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .radioInput:checked + .radio {
-    background: #FFFFFF;
-box-shadow: 0px 3px 15px rgba(6, 5, 50, 0.05);
-/* padding: 5px 28px 7px; */
-border-radius: 100px;
+  background: #ffffff;
+  box-shadow: 0px 3px 15px rgba(6, 5, 50, 0.05);
+  /* padding: 5px 28px 7px; */
+  border-radius: 100px;
+}
 
+.ingredientName {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #4d4d4d;
+}
+
+.ingredientNameRemove {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #4d4d4d;
+    padding-right: 25px;
+    text-decoration-line: underline;
+  }
+
+.checkInput {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.check {
+  position: absolute;
+  /* margin-top: 0.em; */
+  margin-left: -1.5em;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 0.5px solid #727171;
+  background-image: url(./icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+}
+
+.checkInput:checked + .check .ingredientName {
+  background-image: url(./icon2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.checkWrap {
+  margin-bottom: 23px;
+  max-width: 320px;
+}
+
+.addToPizza {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  margin-top: 7px;
+  margin-bottom: 11px;
+}
+.addToPizzaContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  width: 100px;
+  height: 150px;
+  background: #ffffff;
+  box-shadow: 0px 4px 5px rgba(6, 5, 50, 0.05);
+  border-radius: 12px;
+}
+.cardText {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+
+  color: #000000;
+}
+
+.cardPrice {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+
+  text-align: center;
+
+  color: #000000;
 }

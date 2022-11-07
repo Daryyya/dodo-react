@@ -18,6 +18,7 @@ const combo = [
     description:
       "Наш хит «Аррива!» или другая пицца 25 см, Додстер, напиток и соус.",
     price: 599,
+    type: 'tocart',
   },
   {
     id: 10,
@@ -26,6 +27,7 @@ const combo = [
     name: "2 пиццы",
     description: "Самое популярное комбо из 2 пицц 30 см. Большой выбор",
     price: 899,
+    type: 'tocart',
   },
   {
     id: 11,
@@ -35,6 +37,7 @@ const combo = [
     description:
       "2 пиццы 25 см и закуска на выбор. Для компании из 2–4 человек",
     price: 799,
+    type: 'tocart',
   },
   {
     id: 12,
@@ -44,6 +47,7 @@ const combo = [
     description:
       "Пицца 30 см и 2 закуски на выбор. Для компании из 2–4 человек",
     price: 799,
+    type: 'tocart',
   },
   {
     id: 13,
@@ -53,6 +57,7 @@ const combo = [
     description:
       "3 пиццы 30 см на тонком тесте по суперцене. Выбор пицц ограничен",
     price: 999,
+    type: 'tocart',
   },
 ];
 

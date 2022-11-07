@@ -1,4 +1,5 @@
 import React from "react";
+import ButtonModal from "../../ButtonModal/index.jsx";
 import Buttons from "../Buttons/index.jsx";
 import style from "./Card.module.css";
 
@@ -32,6 +33,12 @@ const Card = ({ item, setIsOpen, setId, isChoice, unchoices, choices }) => {
             {isChoice ? "Удалить" : "В корзину"}
           </Buttons>
         )}
+        {
+          type === 'tomodal' && <ButtonModal type="orange"
+          setIsOpen={setIsOpen}
+          id={id}
+          setId={setId}>Собрать</ButtonModal>
+        }
       </div>
     </div>
   );

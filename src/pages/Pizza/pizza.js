@@ -23,6 +23,38 @@ const pizza = [
     name: "Пицца из половинок",
     description: "Соберите свою пиццу 35 см с двумя разными вкусами",
     price: 600,
+    type: 'tomodal',
+    ingredients: [
+      {
+        name: 'Ветчина',
+        removable: true,
+      },
+      {
+        name: 'сыр чеддер',
+        removable: false,
+      },
+      {
+        name: 'сладкий перец',
+        removable: true,
+      },
+      {
+        name: 'моцарелла',
+        removable: false,
+      },
+      {
+        name: 'томатный соус',
+        removable: false,
+      },
+      {
+        name: 'чеснок',
+        removable: true,
+      },
+      {
+        name: 'итальянские травы',
+        removable: true,
+      },
+    ]
+    
   },
   {
     id: 2,
@@ -31,6 +63,37 @@ const pizza = [
     name: "Пепперони-сердце",
     description: "Пикантная пепперони, моцарелла, томатный соус",
     price: 625,
+    type: 'tomodal',
+    ingredients: [
+      {
+        name: 'Ветчина',
+        removable: true,
+      },
+      {
+        name: 'сыр чеддер',
+        removable: false,
+      },
+      {
+        name: 'сладкий перец',
+        removable: true,
+      },
+      {
+        name: 'моцарелла',
+        removable: false,
+      },
+      {
+        name: 'томатный соус',
+        removable: false,
+      },
+      {
+        name: 'чеснок',
+        removable: true,
+      },
+      {
+        name: 'итальянские травы',
+        removable: true,
+      },
+    ]
   },
   {
     id: 3,
@@ -39,6 +102,37 @@ const pizza = [
     name: "Пирог-сердце",
     description: "Ананасы, брусника, сгущенное молоко",
     price: 625,
+    type: 'tomodal',
+    ingredients: [
+      {
+        name: 'Ветчина',
+        removable: true,
+      },
+      {
+        name: 'сыр чеддер',
+        removable: false,
+      },
+      {
+        name: 'сладкий перец',
+        removable: true,
+      },
+      {
+        name: 'моцарелла',
+        removable: false,
+      },
+      {
+        name: 'томатный соус',
+        removable: false,
+      },
+      {
+        name: 'чеснок',
+        removable: true,
+      },
+      {
+        name: 'итальянские травы',
+        removable: true,
+      },
+    ]
   },
   {
     id: 4,
@@ -48,6 +142,37 @@ const pizza = [
     description:
       "Ветчина, сыр чеддер, сладкий перец, моцарелла, томатный соус, чеснок, итальянские травы",
     price: 625,
+    type: 'tomodal',
+    ingredients: [
+      {
+        name: 'Ветчина',
+        removable: true,
+      },
+      {
+        name: 'сыр чеддер',
+        removable: false,
+      },
+      {
+        name: 'сладкий перец',
+        removable: true,
+      },
+      {
+        name: 'моцарелла',
+        removable: false,
+      },
+      {
+        name: 'томатный соус',
+        removable: false,
+      },
+      {
+        name: 'чеснок',
+        removable: true,
+      },
+      {
+        name: 'итальянские травы',
+        removable: true,
+      },
+    ]
   },
   {
     id: 5,
@@ -56,6 +181,37 @@ const pizza = [
     name: "Цыпленок блю чиз",
     description: "Цыпленок, сыр блю чиз, томаты, моцарелла, соус альфредо",
     price: "от 445 ₽",
+    type: 'tomodal',
+    ingredients: [
+      {
+        name: 'Ветчина',
+        removable: true,
+      },
+      {
+        name: 'сыр чеддер',
+        removable: false,
+      },
+      {
+        name: 'сладкий перец',
+        removable: true,
+      },
+      {
+        name: 'моцарелла',
+        removable: false,
+      },
+      {
+        name: 'томатный соус',
+        removable: false,
+      },
+      {
+        name: 'чеснок',
+        removable: true,
+      },
+      {
+        name: 'итальянские травы',
+        removable: true,
+      },
+    ]
   },
   {
     id: 6,
@@ -64,6 +220,37 @@ const pizza = [
     name: "Нежный лосось",
     description: "Лосось, томаты черри, соус песто, моцарелла, соус альфредо",
     price: 495,
+    type: 'tomodal',
+    ingredients: [
+      {
+        name: 'Ветчина',
+        removable: true,
+      },
+      {
+        name: 'сыр чеддер',
+        removable: false,
+      },
+      {
+        name: 'сладкий перец',
+        removable: true,
+      },
+      {
+        name: 'моцарелла',
+        removable: false,
+      },
+      {
+        name: 'томатный соус',
+        removable: false,
+      },
+      {
+        name: 'чеснок',
+        removable: true,
+      },
+      {
+        name: 'итальянские травы',
+        removable: true,
+      },
+    ]
   },
   {
     id: 7,
@@ -73,6 +260,37 @@ const pizza = [
     description:
       "Увеличенная порция моцареллы, сыры чеддер и пармезан, соус альфредо",
     price: 245,
+    type: 'tomodal',
+    ingredients: [
+      {
+        name: 'Ветчина',
+        removable: true,
+      },
+      {
+        name: 'сыр чеддер',
+        removable: false,
+      },
+      {
+        name: 'сладкий перец',
+        removable: true,
+      },
+      {
+        name: 'моцарелла',
+        removable: false,
+      },
+      {
+        name: 'томатный соус',
+        removable: false,
+      },
+      {
+        name: 'чеснок',
+        removable: true,
+      },
+      {
+        name: 'итальянские травы',
+        removable: true,
+      },
+    ]
   },
   {
     id: 8,
@@ -82,6 +300,37 @@ const pizza = [
     description:
       "Пикантная пепперони, увеличенная порция моцареллы, томаты, томатный соус",
     price: 245,
+    type: 'tomodal',
+    ingredients: [
+      {
+        name: 'Ветчина',
+        removable: true,
+      },
+      {
+        name: 'сыр чеддер',
+        removable: false,
+      },
+      {
+        name: 'сладкий перец',
+        removable: true,
+      },
+      {
+        name: 'моцарелла',
+        removable: false,
+      },
+      {
+        name: 'томатный соус',
+        removable: false,
+      },
+      {
+        name: 'чеснок',
+        removable: true,
+      },
+      {
+        name: 'итальянские травы',
+        removable: true,
+      },
+    ]
   },
 ];
 
