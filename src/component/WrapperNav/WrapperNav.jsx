@@ -9,7 +9,9 @@ export const WrapperNav = ({ children }) => {
       <nav className={s.navigation}>
         <ul className={s.navigation__menu}>{children}</ul>
         {/* <Buttons children="Корзина" /> */}
-        <Link to='/basket'>Корзина</Link>
+        <Link to="/basket" className={s.global__button}>
+          Корзина
+        </Link>
       </nav>
     </div>
   );

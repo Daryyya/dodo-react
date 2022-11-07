@@ -54,6 +54,7 @@ function App() {
           <Combo isOpen={isOpen} setIsOpen={setIsOpen} id={id} setId={setId} />
         }
       />
+
       <Route
         path="/snack"
         element={
@@ -96,6 +97,7 @@ function App() {
           />
         }
       />
+
       <Route path="/uikit" element={<UIkit />} />
       <Route
         path="/basket"
