@@ -18,3 +18,22 @@
   max-width: 467px;
   list-style-type: none;
 }
+
+.global__button {
+  padding: 9px 28px;
+  background-color: #f96900;
+  border-radius: 50px;
+  border: 0;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  transition: 0.4s;
+}
+
+.global__button:hover {
+  background-color: #e96100;
+  transition: 0.4s;
+}

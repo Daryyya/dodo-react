@@ -1,15 +1,34 @@
+@keyframes bounce {
+  0%,
+  20%,
+  60%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+
+.card:hover {
+  animation: bounce 2s;
+}
+
 .card {
   display: flex;
   flex-direction: column;
   flex: 0 0 250px;
   border-radius: 10px;
 }
-/* .card__img {
-    background-image: url(./image.svg);
-    width: 220px;
-    height: 220px;
-    align-self: center;
-  } */
+
 .card__name {
   max-width: 201px;
   max-height: 54px;

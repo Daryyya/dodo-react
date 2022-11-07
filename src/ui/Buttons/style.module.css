@@ -3,14 +3,11 @@
   background-color: #f96900;
   border-radius: 50px;
   border: 0;
-
-  font-family: "Nitro";
   font-size: 16px;
   font-weight: 600;
   line-height: 22px;
   text-align: center;
   color: #ffffff;
-
   transition: 0.4s;
 }
 
@@ -24,7 +21,6 @@
   background: #fff0e6;
   border-radius: 50px;
   border: 0;
-  font-family: "Nunito";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;

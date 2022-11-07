@@ -5,15 +5,21 @@ import style from "./Card1.module.css";
 import button from "./Vector.jpg";
 import Counter from "../ui/Counter/Counter";
 
-const Card1 = ({ item, setIsOpen, setId, isChoice, unchoices, choices, setPrice }) => {
-  
-
+const Card1 = ({
+  item,
+  setIsOpen,
+  setId,
+  isChoice,
+  unchoices,
+  choices,
+  setPrice,
+}) => {
   const { image_1x, image_2x, name, description, price, id } = item;
   const [count, setCount] = useState(1);
 
-  useEffect(()=>{
-    setPrice((p) => p + price)
-  }, [])
+  useEffect(() => {
+    setPrice((p) => p + price);
+  }, []);
 
   return (
     <div className={style.card}>
@@ -27,10 +33,15 @@ const Card1 = ({ item, setIsOpen, setId, isChoice, unchoices, choices, setPrice 
         />
       </div>
       <p className={style.card__name}>{name}</p>
-      <p className={style.card__desc}>{description}</p>
+      {/* <p className={style.card__desc}>{description}</p> */}
       <div className={style.card__info}>
         <p className={style.card__price}>{`${price * count}₽`}</p>
-        <Counter count={count} setCount={setCount} setPrice={setPrice} price={price}/>
+        <Counter
+          count={count}
+          setCount={setCount}
+          setPrice={setPrice}
+          price={price}
+        />
         <Button1
           choices={choices}
           unchoices={unchoices}
