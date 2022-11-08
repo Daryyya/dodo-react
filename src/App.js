@@ -13,11 +13,12 @@ import snack from "./pages/Snack/snack";
 import desert from "./pages/Desert/desert";
 import drink from "./pages/Drink/drink";
 import Home from "./pages/Home";
+import clonePizza from "./pages/Pizza/clonePizza.js";
 
 const savedChoices = JSON.parse(localStorage.getItem("choiseCard")) ?? [];
 
 function App() {
-  const clonePizza = [...pizza];
+  // const clonePizza = [...pizza];
   const [data, setData] = useState([]);
 
   useEffect(() => {
