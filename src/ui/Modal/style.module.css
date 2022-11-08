@@ -88,6 +88,7 @@ border-radius: 100px; */
   padding: 7px 23px;
   font-size: 12px;
   line-height: 16px;
+  cursor: pointer;
 }
 
 .radioInput:checked + .radio {
@@ -136,6 +137,7 @@ border-radius: 100px; */
   background-repeat: no-repeat;
   background-position: center;
   background-color: white;
+  cursor: pointer;
 }
 
 .checkInput:checked + .ingredientNameRemove + .check {
@@ -169,6 +171,7 @@ border-radius: 100px; */
   background: #ffffff;
   box-shadow: 0px 4px 5px rgba(6, 5, 50, 0.05);
   border-radius: 12px;
+  cursor: pointer;
 }
 
 .cardText {
@@ -199,6 +202,7 @@ border-radius: 100px; */
   top: 10px;
   border: 0;
   background: none;
+  cursor: pointer;
 }
 
 .orange {
@@ -208,8 +212,8 @@ border-radius: 100px; */
   background: #ffffff;
   box-shadow: 0px 4px 5px rgba(6, 5, 50, 0.05);
   border-radius: 12px;
-
-  outline: 1px solid #F96900;
+  cursor: pointer;
+  outline: 1px solid #f96900;
 }
 
 .orangeBox {
@@ -219,9 +223,8 @@ border-radius: 100px; */
   width: 13px;
   height: 13px;
   border-radius: 50%;
-  border: 1px solid #F96900;
-  background-image: url('./Vector.svg');
+  border: 1px solid #f96900;
+  background-image: url("./Vector.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
-

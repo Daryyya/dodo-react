@@ -16,7 +16,7 @@ const Buttons = ({
       onClick={() => {
         isChoice ? unchoices(id) : choices(id);
       }}
-      className={s.global__button}
+      className={type === "modal" ? s.buttonPos : s.global__button}
     >
       {children}
     </button>

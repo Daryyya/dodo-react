@@ -71,13 +71,13 @@ const Modal = ({
             </label>
             <label>
               <input
-              defaultChecked
+                defaultChecked
                 onChange={() => setCountPrice(locPrice)}
                 className={style.radioInput}
                 type="radio"
                 name="size"
               />
-              <span  className={style.radio}>Средняя</span>
+              <span className={style.radio}>Средняя</span>
             </label>
             <label>
               <input
@@ -92,7 +92,12 @@ const Modal = ({
 
           <div className={style.radioWrap}>
             <label>
-              <input defaultChecked className={style.radioInput} type="radio" name="variant" />
+              <input
+                defaultChecked
+                className={style.radioInput}
+                type="radio"
+                name="variant"
+              />
               <span className={style.radio}>Традиционное</span>
             </label>
             <label>
@@ -105,9 +110,9 @@ const Modal = ({
           <div className={style.addToPizzaContainer}>
             {ingredients.map((el) => (
               <div
-
-                className={addIngredients.includes(el.image)?  style.orange : style.card}
-
+                className={
+                  addIngredients.includes(el.image) ? style.orange : style.card
+                }
                 key={el.image}
                 onClick={() => {
                   if (addIngredients.includes(el.image)) {
@@ -125,7 +130,11 @@ const Modal = ({
                   }
                 }}
               >
-                <span className={addIngredients.includes(el.image)?  style.orangeBox : null}></span>
+                <span
+                  className={
+                    addIngredients.includes(el.image) ? style.orangeBox : null
+                  }
+                ></span>
                 <img src={el.image} />
                 <h2 className={style.cardText}>{el.name}</h2>
                 <p className={style.cardPrice}>{`${el.price}₽`}</p>
@@ -133,7 +142,7 @@ const Modal = ({
             ))}
           </div>
           <Buttons
-            type="orange"
+            type="modal"
             choices={choices}
             unchoices={unchoices}
             isChoice={isChoice}

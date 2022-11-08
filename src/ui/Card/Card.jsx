@@ -33,12 +33,16 @@ const Card = ({ item, setIsOpen, setId, isChoice, unchoices, choices }) => {
             {isChoice ? "Удалить" : "В корзину"}
           </Buttons>
         )}
-        {
-          type === 'tomodal' && <ButtonModal type="orange"
-          setIsOpen={setIsOpen}
-          id={id}
-          setId={setId}>Собрать</ButtonModal>
-        }
+        {type === "tomodal" && (
+          <ButtonModal
+            type="orange"
+            setIsOpen={setIsOpen}
+            id={id}
+            setId={setId}
+          >
+            Собрать
+          </ButtonModal>
+        )}
       </div>
     </div>
   );
