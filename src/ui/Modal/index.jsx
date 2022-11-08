@@ -3,6 +3,7 @@ import style from "./style.module.css";
 import { ingredients } from "./ingredients.js";
 import Buttons from "../Buttons";
 import pizza from "../../pages/Pizza/pizza";
+import close from "./close.svg";
 import { useEffect } from "react";
 
 const Modal = ({
@@ -20,12 +21,11 @@ const Modal = ({
   const [countPrice, setCountPrice] = useState(locPrice);
   const [countPrice2, setCountPrice2] = useState(0);
   const [addIngredients, setAddIngredients] = useState([]);
-  const [totalPrice, setTotalPrice] = useState(0)
+  const [totalPrice, setTotalPrice] = useState(0);
 
   useEffect(() => {
-    setTotalPrice(countPrice + countPrice2)
-    
-  }, [countPrice, countPrice2])
+    setTotalPrice(countPrice + countPrice2);
+  }, [countPrice, countPrice2]);
 
   card.price = totalPrice;
   return (
@@ -105,7 +105,9 @@ const Modal = ({
           <div className={style.addToPizzaContainer}>
             {ingredients.map((el) => (
               <div
+
                 className={addIngredients.includes(el.image)?  style.orange : style.card}
+
                 key={el.image}
                 onClick={() => {
                   if (addIngredients.includes(el.image)) {
@@ -142,7 +144,7 @@ const Modal = ({
             {isChoice ? "Удалить" : `Добавить в корзину за ${totalPrice}`}
           </Buttons>
           <button className={style.close} onClick={() => setIsOpen(false)}>
-            CLOSE
+            <img src={close} />
           </button>
         </div>
       </div>
