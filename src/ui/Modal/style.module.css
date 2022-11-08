@@ -196,3 +196,12 @@ border-radius: 100px; */
   top: 0;
   right: 0;
 }
+
+.orange {
+  width: 100px;
+  height: 150px;
+  background: #ffffff;
+  box-shadow: 0px 4px 5px rgba(6, 5, 50, 0.05);
+  border-radius: 12px;
+  outline: 1px solid red;
+}
