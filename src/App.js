@@ -7,7 +7,6 @@ import Combo from "./pages/Combo/Combo.jsx";
 import Snack from "./pages/Snack/Snack.jsx";
 import Desert from "./pages/Desert/Desert.jsx";
 import Drink from "./pages/Drink/Drink.jsx";
-import clonePizza from './pages/Pizza/clonePizza.js'
 import combo from "./pages/Combo/combo";
 import snack from "./pages/Snack/snack";
 import desert from "./pages/Desert/desert";
@@ -17,8 +16,7 @@ import Home from "./pages/Home";
 const savedChoices = JSON.parse(localStorage.getItem("choiseCard")) ?? [];
 
 function App() {
-
-
+  const clonePizza = [...pizza];
   const [data, setData] = useState([]);
 
   useEffect(() => {
