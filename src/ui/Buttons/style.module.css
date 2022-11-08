@@ -1,5 +1,5 @@
 .global__button {
-  padding: 9px 28px;
+  padding: 13px 50px;
   background-color: #f96900;
   border-radius: 50px;
   border: 0;
@@ -9,6 +9,9 @@
   text-align: center;
   color: #ffffff;
   transition: 0.4s;
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
 }
 
 .global__button:hover {
@@ -16,21 +19,4 @@
   transition: 0.4s;
 }
 
-.lite__button {
-  padding: 9px 28px;
-  background: #fff0e6;
-  border-radius: 50px;
-  border: 0;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 22px;
-  text-align: center;
-  color: #d15700;
-  transition: 0.4s;
-}
 
-.lite__button:hover {
-  background-color: #f2d4c5;
-  transition: 0.4s;
-}

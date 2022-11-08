@@ -14,16 +14,9 @@ const Buttons = ({
   return (
     <button
       onClick={() => {
-        
         isChoice ? unchoices(id) : choices(id);
       }}
-      className={
-        type === "orange"
-          ? s.global__button
-          : isChoice
-          ? s.global__button
-          : s.lite__button
-      }
+      className={s.global__button}
     >
       {children}
     </button>
