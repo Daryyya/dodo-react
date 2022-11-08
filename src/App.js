@@ -45,13 +45,17 @@ function App() {
       <Route
         path="/pizza"
         element={
-          <Pizza isOpen={isOpen} setIsOpen={setIsOpen} id={id} setId={setId} data={data}/>
+          <Pizza isOpen={isOpen} setIsOpen={setIsOpen} id={id} setId={setId} data={data} choice={choice}
+          choices={choices}
+          unchoices={unchoices}/>
         }
       />
       <Route
         path="/combo"
         element={
-          <Combo isOpen={isOpen} setIsOpen={setIsOpen} id={id} setId={setId} />
+          <Combo isOpen={isOpen} setIsOpen={setIsOpen} id={id} setId={setId} choice={choice}
+          choices={choices}
+          unchoices={unchoices}/>
         }
       />
 
