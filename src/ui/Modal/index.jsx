@@ -3,7 +3,7 @@ import style from "./style.module.css";
 import {ingredients} from './ingredients.js'
 import Buttons from "../Buttons";
 
-const Modal = ({ setIsOpen, id, data, choices, unchoices, isChoice, setId }) => {
+const Modal = ({ setIsOpen, id, data, setId, isChoice, choices, unchoices }) => {
   const card = (data || []).find((el) => el.id === id);
   const ingredient = card.ingredients;
   return (
@@ -28,8 +28,10 @@ const Modal = ({ setIsOpen, id, data, choices, unchoices, isChoice, setId }) => 
               removable?
               (<label>
                 <input className={style.checkInput} type='checkbox'/>
+                
                 <span className={style.ingredientNameRemove}>{`${name} `}</span>
                 <span className={style.check} ></span>
+                
               </label>) :
               (<span className={style.ingredientName}>{`${name}, `}</span>)
             ))
@@ -74,16 +76,16 @@ const Modal = ({ setIsOpen, id, data, choices, unchoices, isChoice, setId }) => 
           </div>
           <Buttons
             type="orange"
-            // choices={choices}
-            // unchoices={unchoices}
-            // isChoice={isChoice}
+            choices={choices}
+            unchoices={unchoices}
+            isChoice={isChoice}
             setIsOpen={setIsOpen}
             id={id}
             setId={setId}
           >
             {isChoice ? "Удалить" : "Добавить в корзину"}
           </Buttons>
-          <button onClick={() => setIsOpen(false)}>CLOSE</button>
+          <button className={style.close} onClick={() => setIsOpen(false)}>CLOSE</button>
         </div>
       </div>
     </div>
