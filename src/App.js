@@ -12,7 +12,6 @@ import combo from "./pages/Combo/combo";
 import snack from "./pages/Snack/snack";
 import desert from "./pages/Desert/desert";
 import drink from "./pages/Drink/drink";
-import pizza from "./pages/Pizza/pizza";
 import Home from "./pages/Home";
 
 const savedChoices = JSON.parse(localStorage.getItem("choiseCard")) ?? [];
