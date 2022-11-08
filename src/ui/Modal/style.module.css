@@ -193,8 +193,12 @@ border-radius: 100px; */
 
 .close {
   position: absolute;
-  top: 0;
-  right: 0;
+  width: 24px;
+  height: 24px;
+  left: 930px;
+  top: 10px;
+  border: 0;
+  background: none;
 }
 
 .orange {

@@ -7,6 +7,7 @@ import Combo from "./pages/Combo/Combo.jsx";
 import Snack from "./pages/Snack/Snack.jsx";
 import Desert from "./pages/Desert/Desert.jsx";
 import Drink from "./pages/Drink/Drink.jsx";
+import pizza from "./pages/Pizza/pizza.js";
 import combo from "./pages/Combo/combo";
 import snack from "./pages/Snack/snack";
 import desert from "./pages/Desert/desert";
@@ -45,17 +46,30 @@ function App() {
       <Route
         path="/pizza"
         element={
-          <Pizza isOpen={isOpen} setIsOpen={setIsOpen} id={id} setId={setId} data={data} choice={choice}
-          choices={choices}
-          unchoices={unchoices}/>
+          <Pizza
+            isOpen={isOpen}
+            setIsOpen={setIsOpen}
+            id={id}
+            setId={setId}
+            data={data}
+            choice={choice}
+            choices={choices}
+            unchoices={unchoices}
+          />
         }
       />
       <Route
         path="/combo"
         element={
-          <Combo isOpen={isOpen} setIsOpen={setIsOpen} id={id} setId={setId} choice={choice}
-          choices={choices}
-          unchoices={unchoices}/>
+          <Combo
+            isOpen={isOpen}
+            setIsOpen={setIsOpen}
+            id={id}
+            setId={setId}
+            choice={choice}
+            choices={choices}
+            unchoices={unchoices}
+          />
         }
       />
 
