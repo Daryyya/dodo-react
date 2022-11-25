@@ -20,7 +20,7 @@ const Slider = () => {
         // Возвращаем индекс
         return res;
       });
-    }, 3000);
+    }, 5000);
     // Выключаем интервал
     return () => clearInterval();
   }, []);
@@ -41,16 +41,17 @@ const Slider = () => {
     //     alt="Предложения без мяса"
     //   />
     // </div>
-
-    <div className={s.slider}>
-      <div className={s.slider_img_prev} key={prevImgIndex}>
-        {img[prevImgIndex]}
-      </div>
-      <div className={s.slider_img} key={activeIndex}>
-        {img[activeIndex]}
-      </div>
-      <div className={s.slider_img_next} key={nextImgIndex}>
-        {img[nextImgIndex]}
+    <div className={s.slider_wrapper}>
+      <div className={s.slider}>
+        <div className={s.slider_img_prev} key={prevImgIndex}>
+          {img[prevImgIndex]}
+        </div>
+        <div className={s.slider_img} key={activeIndex}>
+          {img[activeIndex]}
+        </div>
+        <div className={s.slider_img_next} key={nextImgIndex}>
+          {img[nextImgIndex]}
+        </div>
       </div>
     </div>
   );
