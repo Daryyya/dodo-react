@@ -23,30 +23,24 @@
 .links__dodo {
   max-width: 140px;
   margin-right: 43px;
+  cursor: pointer;
 }
 
 .links__job {
   max-width: 105px;
   margin-right: 75px;
+  cursor: pointer;
 }
 
 .links__partners {
   max-width: 105px;
   margin-right: 73px;
+  cursor: pointer;
 }
 
 .links__interesting {
   max-width: 130px;
-}
-
-.menu__header {
-  margin-bottom: 10px;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 26px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #ffffff;
+  cursor: pointer;
 }
 
 .menu__item {
@@ -58,6 +52,10 @@
   text-align: left;
   color: #ffffff;
   opacity: 0.7;
+}
+
+.menu__item:hover {
+  opacity: 1;
 }
 
 .phone__number {
@@ -92,7 +90,11 @@
   letter-spacing: 0em;
   text-align: right;
   color: #ffffff;
-  opacity: 0.9;
+  opacity: 0.7;
+}
+
+.footer__mail:hover {
+  opacity: 1;
 }
 
 .footer__facts {
@@ -172,12 +174,17 @@
   opacity: 0.7;
 }
 
+.info__link:hover {
+  opacity: 1;
+}
+
 .info__social {
   display: flex;
   gap: 6px;
 }
 
-.global__img {
+.footer__img {
   max-width: 100%;
   height: auto;
+  cursor: pointer;
 }

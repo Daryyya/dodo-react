@@ -16,26 +16,26 @@ export const Footer = () => {
         <div className={s.footer__navigation}>
           <div className={s.footer__links}>
             <ul className={s.links__dodo}>
-              <li className={s.menu__header}>Додо Пицца</li>
+              <li className={s.menu__item}>Додо Пицца</li>
               <li className={s.menu__item}>О нас</li>
               <li className={s.menu__item}>Додо-книга</li>
               <li className={s.menu__item}>Блог «Сила ума»</li>
               <li className={s.menu__item}>Додо ИС</li>
             </ul>
             <ul className={s.links__job}>
-              <li className={s.menu__header}>Работа</li>
+              <li className={s.menu__item}>Работа</li>
               <li className={s.menu__item}>В пиццерии</li>
               <li className={s.menu__item}>В контакт-центре</li>
             </ul>
             <ul className={s.links__partners}>
-              <li className={s.menu__header}>Партнерам</li>
+              <li className={s.menu__item}>Партнерам</li>
               <li className={s.menu__item}>Франшиза</li>
               <li className={s.menu__item}>Инвестиции</li>
               <li className={s.menu__item}>Поставщикам</li>
               <li className={s.menu__item}>Предложить помещение</li>
             </ul>
             <ul className={s.links__interesting}>
-              <li className={s.menu__header}>Это интересно</li>
+              <li className={s.menu__item}>Это интересно</li>
               <li className={s.menu__item}>Экскурсии и мастер-классы</li>
               <li className={s.menu__item}>Корпоративные заказы</li>
             </ul>
@@ -47,14 +47,14 @@ export const Footer = () => {
               width="135"
               height="40"
               alt="Google Play"
-              className={s.global__img}
+              className={s.footer__img}
             />
             <img
               src={app}
               width="136"
               height="40"
               alt="Apple Store"
-              className={s.global__img}
+              className={s.footer__img}
             />
             <a className={s.phone__number} href="tel:8-800-302-00-60">
               8-800-302-00-60
@@ -90,7 +90,7 @@ export const Footer = () => {
               width="276"
               height="22"
               alt="Footer Logo"
-              className={s.global__img}
+              className={s.footer__img}
             />
           </div>
           <div className={s.info__links}>
@@ -106,35 +106,35 @@ export const Footer = () => {
           </div>
           <div className={s.info__social}>
             <img
-              className={s.global__img}
+              className={s.footer__img}
               src={facebook}
               width="32"
               height="32"
               alt="Facebook"
             />
             <img
-              className={s.global__img}
+              className={s.footer__img}
               src={instagram}
               width="32"
               height="32"
               alt="Instagram"
             />
             <img
-              className={s.global__img}
+              className={s.footer__img}
               src={ok}
               width="32"
               height="32"
               alt="Odnoklassniki"
             />
             <img
-              className={s.global__img}
+              className={s.footer__img}
               src={vk}
               width="32"
               height="32"
               alt="Vkontakte"
             />
             <img
-              className={s.global__img}
+              className={s.footer__img}
               src={youtube}
               width="32"
               height="32"
