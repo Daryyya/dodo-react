@@ -4,6 +4,7 @@ import { title } from "../../pages/Home/Array";
 import Navigation from "../Navigation/Navigation";
 import { WrapperNav } from "../WrapperNav/WrapperNav";
 import Main from "../Main";
+import { Footer } from "../Footer/Footer";
 
 export const Layout = ({ children }) => {
   return (
@@ -15,6 +16,7 @@ export const Layout = ({ children }) => {
         ))}
       </WrapperNav>
       <Main>{children}</Main>
+      <Footer />
     </>
   );
 };

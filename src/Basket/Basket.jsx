@@ -31,7 +31,7 @@ const Basket = ({ choice, unchoices, choices, data }) => {
           <p className={s.sum_item}>Сумма заказа: {price}</p>
         </div>
       </div>
-      <div className={s.footer}>
+      {/* <div className={s.footer}>
         <div className={s.wrap}>
           <a className={s.num}>8-800-302-00-60</a>
           <p className={s.p}>Звонок бесплатный</p>
@@ -59,7 +59,7 @@ const Basket = ({ choice, unchoices, choices, data }) => {
           </div>
           <a className={s.info_link}>feedback@dodopizza.com</a>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

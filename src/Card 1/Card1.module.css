@@ -1,17 +1,10 @@
 .card {
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-between;
-  /* flex: 0 0 250px; */
   padding: 25px 0;
   border-bottom: 1px solid #e1e1e8;
 }
-/* .card__img {
-    background-image: url(./image.svg);
-    width: 220px;
-    height: 220px;
-    align-self: center;
-  } */
+
 .card__name {
   max-width: 201px;
   max-height: 54px;
@@ -47,12 +40,3 @@
 .card__btn {
   margin-right: 15px;
 }
-
-/* .card:hover {
-  box-shadow: 6px 6px 6px rgba(6, 5, 50, 0.05);
-  transition: 0.3s;
-}
-.card:active {
-  box-shadow: none;
-  transition: 0.3s;
-} */
